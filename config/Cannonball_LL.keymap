@@ -99,7 +99,7 @@
     	    >;
 
             // Encoder ( Upper CCW CW, Middle Left(UP) Right(Down), Left(UP) Right(Down))
-            sensor-bindings = <&rot_kp LBKT RBKT>, <&scroll_move_y>, <&rot_kp LG(KP_PLUS) LG(KP_MINUS)>;
+            sensor-bindings = <&scroll_move_y>, <&rot_kp LBKT RBKT>, <&rot_kp LG(KP_PLUS) LG(KP_MINUS)>;
     	};
 
         // BT設定、スクロールレイヤー
