@@ -36,7 +36,7 @@
         scroll_move_y: sensor_rotate_msc_for_move_y {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            bindings = <&msc MOVE_Y(20)>, <&msc MOVE_Y(-20)>;
             // tap-ms下限メモ Yの値で可変: Y(15) <81>, Y(20) <65>, Y(25) <49>
             tap-ms = <65>;
         };
@@ -45,7 +45,7 @@
         scroll_move_x: sensor_rotate_msc_for_move_x {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&kp LBKT>, <&kp RBKT>;
+            bindings = <&msc MOVE_X(20)>, <&msc MOVE_X(-20)>;
             // tap-ms下限メモ Xの値で可変: X(15) <81>, X(20) <65>, X(25) <49>
             tap-ms = <65>;
         };
@@ -99,7 +99,7 @@
     	    >;
 
             // Encoder ( Upper CCW CW, Middle Left(UP) Right(Down), Left(UP) Right(Down))
-            sensor-bindings = <&rot_kp LG(Z) LS(LG(Z))>, <&scroll_move_y>, <&rot_kp LG(PLUS) LG(MINUS)>;
+            sensor-bindings = <&rot_kp LBKT RBKT>, <&scroll_move_y>, <&rot_kp LG(KP_PLUS) LG(KP_MINUS)>;
     	};
 
         // BT設定、スクロールレイヤー
