@@ -75,7 +75,7 @@
                 // Back (Upper, Lower)
                 &bt BT_SEL 0 &bt BT_SEL 1
     	    >;
-            sensor-bindings = <&rot_kp LEFT_BRACKET RIGHT_BRACKET>, <&scroll_move_x KP_N6 KP_N9>, <&scroll_move_y LG(KP_PLUS) LG(KP_MINUS)>;
+            sensor-bindings = <&rot_kp N1 N2>, <&rot_kp N3 N4>, <&rot_kp N5 N6>;
     	};
 
         // MacOS用
