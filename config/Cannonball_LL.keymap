@@ -83,12 +83,12 @@
             bindings = <
                 // Key
                 &mkp MB2   &kp LGUI   &kp LSHFT    &kp BSPC
-                &mkp MB3   &mo SCROLL &kp LG(N0)   &kp LG(N4)
-                &kp Z   &kp KP_N1    &kp N6  &kp N5
+                &mkp MB3   &mo SCROLL &kp LG(N0)   &kp W
+                &kp Z   &kp KP_N1    &kp N6  &kp P
                 // Mouse
                 &kp LG(C) &kp LG(V)
                 // Stick
-                &kp LS(LG(T)) &kp LS(LC(TAB)) &kp LG(W) &kp LC(TAB)
+                &kp LS(LG(U)) &kp LS(LG(S)) &kp LS(LG(U)) &kp LS(LG(S))
                 // Lever
                 &to DEFAULT_WIN &kp F11 &to DEFAULT_MAC
                 &to DEFAULT_WIN &kp F12 &to DEFAULT_MAC
