@@ -90,7 +90,7 @@
                 // Stick
                 &kp LS(LG(U)) &kp LS(LG(S)) &kp LS(LG(U)) &kp LS(LG(S))
                 // Lever
-                &to DEFAULT_WIN &kp F11 &to DEFAULT_MAC
+                &kp LG(Z) &kp F11 &kp LG(Y)
                 &to DEFAULT_WIN &kp F12 &to DEFAULT_MAC
                 // Side
                 &kp F1 &kp F2 &kp LG(Z) &kp LG(Y)
