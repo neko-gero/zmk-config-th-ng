@@ -82,24 +82,24 @@
     	DEFAULT_MAC {
             bindings = <
                 // Key
-                &mkp MB2   &kp LGUI   &kp LSHFT    &kp BSPC
-                &mkp MB3   &mo SCROLL &kp LG(N0)   &kp W
-                &kp Z   &kp KP_N1    &kp N6  &kp P
+                &mkp MB2   &kp LCTRL   &kp LSHFT    &kp BSPC
+                &mkp MB3   &mo SCROLL  &kp LC(N0)   &kp DEL
+                &mkp MB1   &kp TAB     &kp LS(TAB)  &kp RET
                 // Mouse
-                &kp LG(C) &kp LG(V)
+                &mkp LCLK &mkp RCLK
                 // Stick
-                &kp LS(LG(U)) &kp LS(LG(S)) &kp LS(LG(U)) &kp LS(LG(S))
+                &kp UP_ARROW &kp DOWN_ARROW &kp LEFT_ARROW &kp RIGHT_ARROW
                 // Lever
                 &kp LG(Z) &kp F11 &kp LG(Y)
                 &to DEFAULT_WIN &kp F12 &to DEFAULT_MAC
                 // Side
-                &kp F1 &kp F2 &kp LG(Z) &kp LG(Y)
+                &mkp MB4 &mkp MB5 &kp LG(Z) &kp LG(Y)
                 // Back
                 &bt BT_SEL 0 &bt BT_SEL 1
     	    >;
 
             // Encoder ( Upper CCW CW, Middle Left(UP) Right(Down), Left(UP) Right(Down))
-            sensor-bindings = <&rot_kp LG(KP_PLUS) LG(KP_MINUS)>, <&rot_kp LG(KP_PLUS) LG(KP_MINUS)>, <&rot_kp KP_N9 KP_N6>;
+            sensor-bindings = <&rot_kp &msc SCRL_LEFT &msc SCRL_RIGHT>, <&rot_kp &msc SCRL_UP &msc SCRL_DOWN>, <&rot_kp &msc SCRL_UP &msc SCRL_DOWN>;
     	};
 
         // BT設定、スクロールレイヤー
